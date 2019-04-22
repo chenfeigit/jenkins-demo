@@ -4,7 +4,7 @@ package main
 // Import os so we can read environment variables from the system
 import (
 	"fmt"
-	"os"
+	//"os"
 )
 
 func main() {
