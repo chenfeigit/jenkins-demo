@@ -25,6 +25,7 @@ node('kubernetes-jnlp') {
         input "确认要部署线上环境吗？"
         sh "sed -i 's/<BUILD_TAG>/${build_tag}/' k8s.yaml"
         //sh "sed -i 's/<BRANCH_NAME>/${build_tag}/' k8s.yaml"
+        sh "cat k8s.yaml"
         sh "kubectl apply -f k8s.yaml --record"
     }
 }
