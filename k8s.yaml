@@ -1,4 +1,4 @@
-apiVersion: extensions/v1
+apiVersion: extensions/v1bata1
 kind: Deployment
 metadata:
   name: jenkins-demo
